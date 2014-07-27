@@ -1,0 +1,42 @@
+Source: python-greenio
+Section: python
+Priority: optional
+Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+Uploaders: Julien Danjou <acid@debian.org>,
+           Thomas Goirand <zigo@debian.org>,
+           Mehdi Abaakouk <sileht@sileht.net>,
+           Gonéri Le Bouder <goneri@debian.org>
+Build-Depends: debhelper (>= 9),
+               python-all (>= 2.6.6-3~),
+               python-greenlet,
+               python-setuptools,
+               python-trollius,
+               python3-all,
+               python3-greenlet,
+               python3-setuptools,
+               python3-trollius
+Standards-Version: 3.9.5
+X-Python-Version: >= 2.7
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-greenio.git
+Vcs-Git: git://anonscm.debian.org/openstack/python-greenio.git
+Homepage: https://github.com/1st1/greenio/
+
+Package: python-greenio
+Architecture: all
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: ${misc:Depends}, ${python:Depends}
+Description: greenlets for asyncio (PEP 3156). - Python 2.x
+ The python-greenio package provides support for greenlets in asyncio. It
+ requires asyncio and greenlet.
+ .
+ This package contains the Python 2.x module.
+
+Package: python3-greenio
+Architecture: all
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: greenlets for asyncio (PEP 3156). - Python 3.x
+ The python-greenio package provides support for greenlets in asyncio. It
+ requires asyncio and greenlet.
+ .
+ This package contains the Python 3.x module.
