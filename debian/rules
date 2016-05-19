@@ -4,7 +4,7 @@
 PYTHONS:=2.7
 PYTHON3S:=$(shell py3versions -vr)
 
-UPSTREAM_GIT = git://github.com/1st1/greenio.git
+UPSTREAM_GIT := https://github.com/1st1/greenio.git
 -include /usr/share/openstack-pkg-tools/pkgos.make
 
 %:
